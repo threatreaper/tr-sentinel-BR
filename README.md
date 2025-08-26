@@ -1,4 +1,4 @@
-# TR-Sentinel (clean-room)
+# TR-Sentinel
 
 TR-Sentinel is an LLM safety scanner. It runs a suite of probes (prompt-injection, jailbreak variants, secret/data exfiltration, role confusion, etc.), reports scores, and exposes both a CLI and a REST API.
 

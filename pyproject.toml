@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tr-sentinel"
+version = "0.1.0"
+description = "TR-Sentinel: Clean-room LLM security probe runner with REST API and CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "ThreatReaper", email = "support@threatreaper.io" },
+]
+license = { text = "MIT" }
+dependencies = [
+  "typer>=0.9",
+  "rich>=13.0.0",
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.35.0"]
+server = ["python-multipart>=0.0.9"]
+
+[project.scripts]
+tr-sentinel = "tr_sentinel.cli:app"

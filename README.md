@@ -2,7 +2,6 @@
 
 TR-Sentinel is an LLM safety scanner. It runs a suite of probes (prompt-injection, jailbreak variants, secret/data exfiltration, role confusion, etc.), reports scores, and exposes both a CLI and a REST API.
 
-> ⚠️ This repository is independent work authored by ThreatReaper. It re-implements functionality from first principles and **does not copy** code from any other project.
 
 ## Quickstart
 
